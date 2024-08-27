@@ -1,0 +1,29 @@
+{
+  "name": "cyp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run",
+    "headTest": "npx cypress run --headed",
+    "recordDashBoardTest": "npx cypress run --record --key 786ghh87887",
+    "chromeTest": "npx cypress run --browser chrome",
+    "featureRun": "npx cypress run --spec \"cypress/integration/feature/*.feature\"",
+    "test:Regression": "npx cypress run --env tags=\"@Regression\" --headed --browser chrome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5",
+    "cypress": "^13.13.3",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.2",
+    "@cypress/browserify-preprocessor": "^3.0.2"
+  }
+}
