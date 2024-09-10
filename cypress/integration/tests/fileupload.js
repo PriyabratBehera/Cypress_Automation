@@ -33,5 +33,6 @@ it('file upload shadow dom',()=>{
     cy.get('#drag-drop-upload',{includeShadowDom:true}).attachFile('test1.pdf')
     cy.get('div[class="dz-preview dz-file-preview dz-processing dz-success dz-complete"] .dz-details .dz-filename span').contains('test1.pdf');
     cy.wait(5000)
+    //
 })
 
